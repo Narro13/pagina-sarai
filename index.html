@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nuestra historia de amor">
+  <title>Para Saraí ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">S + M ❤️</div>
+      <div class="nav-links">
+        <a href="#historia">Historia</a>
+        <a href="#timeline">Recuerdos</a>
+        <a href="#galeria">Fotos</a>
+        <a href="#carta">Carta</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Una historia que seguimos escribiendo</p>
+      <h1 id="coupleTitle">Saraí &amp; Miguel</h1>
+      <p id="heroText" class="hero-text"></p>
+      <div class="date-pill" id="startDate"></div>
+      <a class="primary-btn" href="#historia">Nuestra historia ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro" id="historia">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>El comienzo de nosotros</h2>
+      </div>
+      <div class="intro-grid">
+        <div>
+          <p id="introText"></p>
+          <div class="quote" id="quote"></div>
+        </div>
+        <div class="love-card">
+          <div class="mini-heart">♥</div>
+          <p>Desde</p>
+          <strong id="sinceDate"></strong>
+          <small>y todavía nos quedan muchísimos recuerdos por vivir.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading">
+        <span>02</span>
+        <h2>Nuestra línea del tiempo</h2>
+      </div>
+      <p class="section-lead">Cada fecha puede convertirse en una nueva página de nuestra historia.</p>
+      <div id="timelineList" class="timeline"></div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Nuestros momentos</h2>
+      </div>
+      <p class="section-lead">Agrega aquí nuestras fotos favoritas. Solo tienes que subirlas a la carpeta <b>fotos</b> y añadirlas en <b>script.js</b>.</p>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section class="section song-section">
+      <div class="song-card">
+        <div class="vinyl"><span>♪</span></div>
+        <div>
+          <p class="eyebrow">Nuestra canción</p>
+          <h2 id="songName"></h2>
+          <p id="songArtist"></p>
+          <a id="songLink" class="song-btn" target="_blank" rel="noopener">Escuchar la canción ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="carta">
+      <div class="section-heading">
+        <span>04</span>
+        <h2>Una carta para ti</h2>
+      </div>
+      <article class="letter">
+        <p class="letter-date" id="letterDate"></p>
+        <h3 id="letterTitle"></h3>
+        <div id="letterBody"></div>
+        <p class="signature" id="signature"></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con amor para <span id="footerName">Saraí</span> ❤️</p>
+    <p class="footer-small">Nuestra historia no termina aquí… apenas seguimos escribiéndola.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
